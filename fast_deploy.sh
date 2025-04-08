@@ -19,6 +19,7 @@ pip install leafmap
 pip install segment-geospatial
 pip install fiona
 pip install --find-links=https://girder.github.io/large_image_wheels --no-cache GDAL
+conda install -c conda-forge samgeo -y
 
 # Conda Packages 
 echo "Java Geo-Display Enviorment Setup ..."
