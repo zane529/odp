@@ -1,42 +1,32 @@
 #!/bin/bash
 
 # Conda Packages 
-echo "Nvida Enviorment Setup ..."
-# conda install -y -c conda-forge nvitop 
+echo "Java Geo-Display Enviorment Setup ..."
+jupyter labextension list
 
 # Python Packages 
 echo "Python Enviorment Setup ..."
 pip install ipyleaflet
 pip install cogeo_mosaic
 pip install localtileserver
+pip install jsonschema
 pip install rasterio
+pip install localtileserver
+pip install cogeo_mosaic
 pip install matplotlib folium
-# pip install segment-geospatial
+pip install geopandas pycrs osmnx
+pip install leafmap
+pip install flask-restx
+pip install segment-geospatial
 pip install --find-links=https://girder.github.io/large_image_wheels --no-cache GDAL
 
-conda install -c conda-forge mamba -y
-mamba install -c conda-forge segment-geospatial -y
-conda install -c conda-forge proj gdal proj-data -y
-conda install -c conda-forge pyproj -y
-conda install -c conda-forge leafmap -y
-conda install -c conda-forge localtileserver -y
-
-
 # Update from GitHub
-# echo "Optional update of leafmap ..."
-# pip install git+https://github.com/opengeos/leafmap
+echo "Optional update of leafmap ..."
+pip install git+https://github.com/opengeos/leafmap
 
 # Install from GitHub
-# echo "Optional update of Geospatial AIML Developer Enviorment Setup ..."
-# pip install git+https://github.com/opengeos/segment-geospatial
+echo "Optional update of Geospatial AIML Developer Enviorment Setup ..."
+pip install git+https://github.com/opengeos/segment-geospatial
 
-# Conda Packages 
-echo "Java Geo-Display Enviorment Setup ..."
-conda install -y jupyter_contrib_nbextensions -c conda-forge
-# jupyter labextension install @jupyter-widgets/jupyterlab-manager @lumino/widgets jupyter-leaflet
-# jupyter nbextension enable widgetsnbextension --py --sys-prefix
-# jupyter labextension install js
-jupyter labextension list
-
-# Create Kernel for Notebook
-# ipython kernel install --name "python-geo" --user
+pip install geopandas
+pip install fiona
