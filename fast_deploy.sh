@@ -11,18 +11,24 @@ pip install cogeo_mosaic
 pip install localtileserver
 pip install rasterio
 pip install matplotlib folium
-pip install geopandas pycrs osmnx
-pip install leafmap
-pip install segment-geospatial
+# pip install segment-geospatial
 pip install --find-links=https://girder.github.io/large_image_wheels --no-cache GDAL
 
+conda install -c conda-forge mamba -y
+mamba install -c conda-forge segment-geospatial -y
+conda install -c conda-forge proj gdal proj-data -y
+conda install -c conda-forge pyproj -y
+conda install -c conda-forge leafmap -y
+conda install -c conda-forge localtileserver -y
+
+
 # Update from GitHub
-echo "Optional update of leafmap ..."
-pip install git+https://github.com/opengeos/leafmap
+# echo "Optional update of leafmap ..."
+# pip install git+https://github.com/opengeos/leafmap
 
 # Install from GitHub
-echo "Optional update of Geospatial AIML Developer Enviorment Setup ..."
-pip install git+https://github.com/opengeos/segment-geospatial
+# echo "Optional update of Geospatial AIML Developer Enviorment Setup ..."
+# pip install git+https://github.com/opengeos/segment-geospatial
 
 # Conda Packages 
 echo "Java Geo-Display Enviorment Setup ..."
