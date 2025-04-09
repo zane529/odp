@@ -10,19 +10,19 @@ pip install ipyleaflet
 pip install cogeo_mosaic
 pip install localtileserver
 pip install rasterio
-pip install matplotlib folium
-pip install geopandas pycrs osmnx
+pip install matplotlib 
+pip install folium
+pip install pycrs 
+pip install osmnx
 pip install leafmap
 pip install segment-geospatial
+pip install fiona
 pip install --find-links=https://girder.github.io/large_image_wheels --no-cache GDAL
+conda install -c conda-forge samgeo -y
 
-# Update from GitHub
-echo "Optional update of leafmap ..."
-pip install git+https://github.com/opengeos/leafmap
+conda install -c conda-forge proj -y
+conda install -c conda-forge geopandas -y
 
-# Install from GitHub
-echo "Optional update of Geospatial AIML Developer Enviorment Setup ..."
-pip install git+https://github.com/opengeos/segment-geospatial
 
 # Conda Packages 
 echo "Java Geo-Display Enviorment Setup ..."
@@ -31,6 +31,3 @@ conda install -y jupyter_contrib_nbextensions -c conda-forge
 # jupyter nbextension enable widgetsnbextension --py --sys-prefix
 # jupyter labextension install js
 jupyter labextension list
-
-# Create Kernel for Notebook
-# ipython kernel install --name "python-geo" --user
